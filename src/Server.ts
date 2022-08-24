@@ -1,3 +1,5 @@
+import * as Comp from './data/components/Comp1';
+
 abstract class BaseServer {
     protected port: number;
     protected address: string;
@@ -35,15 +37,16 @@ someDbServer.stopServer();
 
 // ####################################
 
-interface IServer {
+export interface IServer {
     startServer(): void;
     stopServer(): void;
 }
 
 
 class Server implements IServer {
-    protected port: number;
-    protected address: string;
+    public port: number;
+    public address: string;
+    public comp1 = new Comp.Comp1;
 
     constructor(port: number, address: string) {
         this.port = port;

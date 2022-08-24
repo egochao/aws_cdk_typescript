@@ -1,6 +1,8 @@
-var a: string = 'hello';
-var b: number = 5;
-var c: boolean = false;
+import { IServer } from "./Server";
+
+var a1: string = 'hello';
+var b1: number = 5;
+var c1: boolean = false;
 
 var someArary: string[] = ['hello'];
 
