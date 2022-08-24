@@ -1,6 +1,6 @@
 class Server {
-    port: number;
-    address: string;
+    private port: number;
+    private address: string;
 
 
     constructor(port: number, address: string) {
@@ -15,5 +15,8 @@ class Server {
     
 }
 
-const server = new Server(3000, 'localhost');
-server.startServer();
+const someServer = new Server(3000, 'localhost');
+someServer.startServer();
+const somePort = (someServer as any).port; // Error
+
+console.log(somePort);
