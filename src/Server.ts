@@ -50,11 +50,18 @@ class Server implements IServer {
         this.address = address;
     }
 
-    startServer() {
+    async startServer() {
+        const data = await this.getData();
+        console.log(data)
         console.log(`interface Server started at ${this.address}:${this.port}`);
     }
 
     stopServer(): void {};
+
+
+    async getData(): Promise<string> {
+        return 'some data';
+    }   
 }
 
 const server = new Server(8000, 'localhost');
