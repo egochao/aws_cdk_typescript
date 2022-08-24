@@ -1,5 +1,6 @@
 import * as Comp from './data/components/Comp1';
 
+
 abstract class BaseServer {
     protected port: number;
     protected address: string;
@@ -47,6 +48,7 @@ class Server implements IServer {
     public port: number;
     public address: string;
     public comp1 = new Comp.Comp1;
+    public date: any;
 
     constructor(port: number, address: string) {
         this.port = port;

@@ -25,7 +25,7 @@ interface Person {
 type job = 'Engineer' | 'Programmer'
 
 
-function generateEmail(input: Person, force?: boolean ){
+function generateEmail(input: Person, force?: boolean ): string | undefined{
     if (input.isVisitor && !force) {
         return undefined;
     } else {
@@ -33,6 +33,9 @@ function generateEmail(input: Person, force?: boolean ){
     }
 
 }
+
+const abc: string | undefined = generateEmail({} as any)
+
 
 console.log('log generated email', generateEmail({
     firstName: 'John', 
