@@ -1,45 +1,16 @@
 # User define
 dummy*
-
-# default
-lib-cov
-*.seed
-*.log
-*.csv
-*.dat
-*.out
-*.pid
-*.gz
-*.swp
-
-pids
-logs
-results
-tmp
-
-# Build
-public/css/main.css
-
-# Coverage reports
-coverage
-
-# API keys and secrets
 .env
 
-# Dependency directory
+# dependencies
 node_modules
-bower_components
 
-# Editors
-.idea
-*.iml
+# sst
+.sst
+.build
 
-# OS metadata
+# misc
 .DS_Store
-Thumbs.db
 
-# Ignore built ts files
-dist/**/*
-
-# ignore yarn.lock
-yarn.lock
+# local env files
+.env*.local
