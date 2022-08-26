@@ -1,5 +1,0 @@
-{
-  "name": "backend",
-  "region": "us-west-2",
-  "main": "stacks/index.js"
-}
