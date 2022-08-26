@@ -1,6 +1,10 @@
 {
-  "name": "gatsby-app",
-  "version": "0.0.0",
+  "name": "aws_cdk_typescript",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://egochao: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@github.com/egochao/aws_cdk_typescript",
+  "author": "egochao <johnoldmanworkspace@gmail.com>",
+  "license": "MIT",
   "private": true,
   "scripts": {
     "start": "sst start",
@@ -11,12 +15,11 @@
     "typecheck": "tsc --noEmit",
     "test": "sst load-config -- vitest run"
   },
-  "devDependencies": {
-    "@serverless-stack/cli": "^1.6.10",
-    "@serverless-stack/resources": "^0.4.5",
+  "dependencies": {
+    "@serverless-stack/cli": "^1.9.2",
     "@tsconfig/node16": "^1.0.3",
     "aws-cdk-lib": "2.32.0",
-    "typescript": "^4.7.4",
+    "typescript": "^4.8.2",
     "vitest": "^0.22.1"
   },
   "workspaces": [
