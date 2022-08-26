@@ -12,6 +12,8 @@
 		}
 	},
 
+	"postCreateCommand": "npm install",
+
 	// Configure tool-specific properties.
 	"customizations": {
 		// Configure properties specific to VS Code.
